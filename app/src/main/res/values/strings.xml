@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Date and Time</string>
+    <string name="select_date">Select Date</string>
+    <string name="selected_date_is">Selected date is:</string>
+</resources>

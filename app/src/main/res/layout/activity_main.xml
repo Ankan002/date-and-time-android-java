@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:height="40dp"
+        android:background="@color/placeholder_text"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:text="@string/select_date"
+        android:textColor="@color/red_text"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mainContainer"
+        android:layout_marginVertical="50dp" />
+
+    <TextView
+        android:id="@+id/date_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/fira_mono"
+        android:text="@string/selected_date_is"
+        android:textColor="@color/red_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/mainContainer"
+        app:layout_constraintStart_toStartOf="@id/mainContainer"
+        app:layout_constraintTop_toBottomOf="@id/select_date"
+        app:layout_constraintBottom_toTopOf="@id/selected_date"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/selected_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fira_mono"
+        android:textColor="@color/red_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/mainContainer"
+        app:layout_constraintStart_toStartOf="@id/mainContainer"
+        app:layout_constraintTop_toBottomOf="@id/date_header"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
